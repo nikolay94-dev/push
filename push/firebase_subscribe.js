@@ -17,7 +17,7 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
-    $(function(){
+    jQuery(document).ready(function($){ //когда страница прогрузилась
         $('#subscribe').on('click', function () {
             subscribe();
         });
