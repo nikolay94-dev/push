@@ -26,6 +26,31 @@ limitations under the License.
 
 <button onclick="fetchMessage()">Fetch Message</button>
 <p id="message">Click on the button to fetch the message.</p>
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDKNTU_UYFDnblut7GTjh87_UpaBY3yv5g",
+        authDomain: "push-c7ea5.firebaseapp.com",
+        databaseURL: "https://push-c7ea5.firebaseio.com",
+        projectId: "push-c7ea5",
+        storageBucket: "push-c7ea5.appspot.com",
+        messagingSenderId: "231477857272",
+        appId: "1:231477857272:web:ddcc4433475a776704a40d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 
 </html>
