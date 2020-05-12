@@ -1,4 +1,6 @@
 // firebase_subscribe.js
+importScripts('https://code.jquery.com/jquery-3.4.1.min.js');
+
 firebase.initializeApp({
     messagingSenderId: '231477857272'
 });
