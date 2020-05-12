@@ -1,4 +1,6 @@
 // firebase_subscribe.js
+importScripts('https://code.jquery.com/jquery-3.4.1.min.js');
+
 firebase.initializeApp({
     messagingSenderId: '231477857272'
 });
@@ -16,9 +18,12 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
-    $('#subscribe').on('click', function () {
-        subscribe();
+    $(function(){
+        $('#subscribe').on('click', function () {
+            subscribe();
+        });
     });
+
 }
 
 function subscribe() {
